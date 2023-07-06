@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.app.socilon.fragments.loginSection.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_exploring1Fragment"
+            app:destination="@id/exploring1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exploring1Fragment"
+        android:name="com.app.socilon.fragments.loginSection.Exploring1Fragment"
+        android:label="fragment_exploring1"
+        tools:layout="@layout/fragment_exploring1" >
+        <action
+            android:id="@+id/action_exploring1Fragment_to_explore2Fragment"
+            app:destination="@id/explore2Fragment" />
+    </fragment>
+     <fragment
+        android:id="@+id/explore2Fragment"
+        android:name="com.app.socilon.fragments.loginSection.Explore2Fragment"
+        android:label="fragment_explore2"
+        tools:layout="@layout/fragment_explore2" >
+
+         <action
+             android:id="@+id/action_explore2Fragment_to_loginFragment"
+             app:destination="@id/loginFragment" />
+     </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.app.socilon.fragments.loginSection.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_phoneLoginFragment"
+            app:destination="@id/phoneLoginFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_phoneLoginFragment2"
+            app:destination="@id/phoneLoginFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_phoneLoginFragment3"
+            app:destination="@id/phoneLoginFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_interstsFragment"
+            app:destination="@id/interstsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.app.socilon.fragments.loginSection.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_phoneLoginFragment"
+            app:destination="@id/phoneLoginFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotByMailFragment"
+            app:destination="@id/forgotByMailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoneLoginFragment"
+        android:name="com.app.socilon.fragments.loginSection.PhoneLoginFragment"
+        android:label="fragment_phone_login"
+        tools:layout="@layout/fragment_phone_login" >
+        <action
+            android:id="@+id/action_phoneLoginFragment_to_interstsFragment"
+            app:destination="@id/interstsFragment" />
+        <action
+            android:id="@+id/action_phoneLoginFragment_to_otpFragment"
+            app:destination="@id/otpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.app.socilon.fragments.loginSection.OtpFragment"
+        android:label="fragment_otp"
+        tools:layout="@layout/fragment_otp" >
+        <action
+            android:id="@+id/action_otpFragment_to_interstsFragment"
+            app:destination="@id/interstsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/interstsFragment"
+        android:name="com.app.socilon.fragments.loginSection.InterstsFragment"
+        android:label="fragment_intersts"
+        tools:layout="@layout/fragment_intersts" >
+        <action
+            android:id="@+id/action_interstsFragment_to_userInterestFragment"
+            app:destination="@id/userInterestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userInterestFragment"
+        android:name="com.app.socilon.fragments.loginSection.UserInterestFragment"
+        android:label="fragment_user_interest"
+        tools:layout="@layout/fragment_user_interest" >
+        <action
+            android:id="@+id/action_userInterestFragment_to_selectLoactionFragment"
+            app:destination="@id/selectLoactionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectLoactionFragment"
+        android:name="com.app.socilon.fragments.loginSection.SelectLoactionFragment"
+        android:label="fragment_select_loaction"
+        tools:layout="@layout/fragment_select_loaction" />
+    <fragment
+        android:id="@+id/forgotByMailFragment"
+        android:name="com.app.socilon.fragments.forgotSection.ForgotByMailFragment"
+        android:label="fragment_forgot_by_mail"
+        tools:layout="@layout/fragment_forgot_by_mail" >
+        <action
+            android:id="@+id/action_forgotByMailFragment_to_forgotByPhoneFragment"
+            app:destination="@id/forgotByPhoneFragment" />
+        <action
+            android:id="@+id/action_forgotByMailFragment_to_resteOtpFragment"
+            app:destination="@id/resteOtpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotByPhoneFragment"
+        android:name="com.app.socilon.fragments.forgotSection.ForgotByPhoneFragment"
+        android:label="fragment_forgot_by_phone"
+        tools:layout="@layout/fragment_forgot_by_phone" >
+        <action
+            android:id="@+id/action_forgotByPhoneFragment_to_forgotByMailFragment"
+            app:destination="@id/forgotByMailFragment" />
+        <action
+            android:id="@+id/action_forgotByPhoneFragment_to_resteOtpFragment"
+            app:destination="@id/resteOtpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resteOtpFragment"
+        android:name="com.app.socilon.fragments.forgotSection.ResetOtpFragment"
+        android:label="fragment_reste_otp"
+        tools:layout="@layout/fragment_reset_otp" >
+        <action
+            android:id="@+id/action_resteOtpFragment_to_createPassFragment2"
+            app:destination="@id/createPassFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPassFragment2"
+        android:name="com.app.socilon.fragments.forgotSection.CreatePassFragment"
+        android:label="fragment_create_pass"
+        tools:layout="@layout/fragment_create_pass" >
+        <action
+            android:id="@+id/action_createPassFragment2_to_congratsScreenFragment"
+            app:destination="@id/congratsScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/congratsScreenFragment"
+        android:name="com.app.socilon.fragments.forgotSection.CongratsScreenFragment"
+        android:label="fragment_congrats_screen"
+        tools:layout="@layout/fragment_congrats_screen" />
+
+</navigation>

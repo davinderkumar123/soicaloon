@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/girl_bg"
+    tools:context=".fragments.location.CreateLiveFragment">
+
+    <ImageView
+        android:id="@+id/closeWindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/close_window" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/upper_curves_rectangle"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:textSize="16sp"/>
+            <ImageView
+                android:id="@+id/closeTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/close"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create a Short"
+                android:drawableStart="@drawable/create_short"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:textColor="@color/black"
+                android:drawablePadding="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload a Video"
+                android:drawableStart="@drawable/upload_video"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:textColor="@color/black"
+                android:drawablePadding="15dp"/>
+            <TextView
+                android:id="@+id/goLive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go live"
+                android:drawableStart="@drawable/go_live"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:textColor="@color/black"
+                android:drawablePadding="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create a Post"
+                android:drawableStart="@drawable/create_post"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"
+                android:drawablePadding="15dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.app.socilon.fragments.home_fragments.HomeFragment"
+        android:label="fragment_home"
+
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_liveShoppingFragment"
+            app:destination="@id/liveShoppingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/liveShoppingFragment"
+        android:name="com.app.socilon.fragments.liveshow.LiveShoppingFragment"
+        android:label="fragment_live_shopping"
+        tools:layout="@layout/fragment_live_shopping"  >
+        <action
+            android:id="@+id/action_liveShoppingFragment_to_userLiveFragment"
+            app:destination="@id/userLiveFragment" />
+        <action
+            android:id="@+id/action_liveShoppingFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userLiveFragment"
+        android:name="com.app.socilon.fragments.liveshow.UserLiveFragment"
+        android:label="fragment_user_live"
+        tools:layout="@layout/fragment_user_live" >
+        <action
+            android:id="@+id/action_userLiveFragment_to_callingFragment"
+            app:destination="@id/callingFragment" />
+        <action
+            android:id="@+id/action_userLiveFragment_to_videoCallingFragment2"
+            app:destination="@id/videoCallingFragment" />
+        <action
+            android:id="@+id/action_userLiveFragment_to_chatUserFragment2"
+            app:destination="@id/chatUserFragment2" />
+        <action
+            android:id="@+id/action_userLiveFragment_to_userRoomFragment2"
+            app:destination="@id/userRoomFragment2" />
+        <action
+            android:id="@+id/action_userLiveFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/callingFragment"
+        android:name="com.app.socilon.fragments.liveshow.CallingFragment"
+          android:label="fragment_calling"
+        tools:layout="@layout/fragment_calling" >
+         <action
+            android:id="@+id/action_callingFragment_to_userLiveFragment3"
+            app:destination="@id/userLiveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoCallingFragment"
+        android:name="com.app.socilon.fragments.liveshow.VideoCallingFragment"
+        android:label="fragment_video_calling"
+        tools:layout="@layout/fragment_video_calling" >
+        <action
+            android:id="@+id/action_videoCallingFragment_to_userLiveFragment"
+            app:destination="@id/userLiveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatUserFragment2"
+        android:name="com.app.socilon.fragments.liveshow.ChatUserFragment"
+        android:label="fragment_chat_user"
+        tools:layout="@layout/fragment_chat_user" >
+        <action
+            android:id="@+id/action_chatUserFragment2_to_userMesageFragment"
+            app:destination="@id/userMesageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userMesageFragment"
+        android:name="com.app.socilon.fragments.liveshow.UserMesageFragment"
+        android:label="fragment_user_mesage"
+        tools:layout="@layout/fragment_user_mesage" />
+    <fragment
+        android:id="@+id/userRoomFragment2"
+        android:name="com.app.socilon.fragments.liveshow.UserRoomFragment"
+        android:label="fragment_use_room"
+        tools:layout="@layout/fragment_use_room" />
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.app.socilon.fragments.liveshow.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_cartFragment_to_reviewsFragment"
+            app:destination="@id/reviewsFragment" />
+        <action
+            android:id="@+id/action_cartFragment_to_shoppingItemsFragment"
+            app:destination="@id/shoppingItemsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewsFragment"
+        android:name="com.app.socilon.fragments.liveshow.ReviewsFragment"
+        android:label="fragment_reviews"
+        tools:layout="@layout/fragment_reviews" />
+    <fragment
+        android:id="@+id/shoppingItemsFragment"
+        android:name="com.app.socilon.fragments.liveshow.ShoppingItemsFragment"
+        android:label="fragment_shopping_items"
+        tools:layout="@layout/fragment_shopping_items" >
+        <action
+            android:id="@+id/action_shoppingItemsFragment_to_itemQuantityFragment"
+            app:destination="@id/itemQuantityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemQuantityFragment"
+        android:name="com.app.socilon.fragments.liveshow.ItemQuantityFragment"
+        android:label="fragment_item_quantity"
+        tools:layout="@layout/fragment_item_quantity" >
+        <action
+            android:id="@+id/action_itemQuantityFragment_to_paymentFragment2"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.app.socilon.fragments.liveshow.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" >
+        <action
+            android:id="@+id/action_paymentFragment_to_addNewCardFragment"
+            app:destination="@id/addNewCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewCardFragment"
+        android:name="com.app.socilon.fragments.liveshow.AddNewCardFragment"
+        android:label="fragment_add_new_card"
+        tools:layout="@layout/fragment_add_new_card" />
+    <fragment
+        android:id="@+id/eventsFragment"
+        android:name="com.app.socilon.fragments.events.EventsFragment"
+        android:label="fragment_events"
+        tools:layout="@layout/fragment_events" >
+        <action
+            android:id="@+id/action_eventsFragment_to_past_Events_Fragment"
+            app:destination="@id/past_Events_Fragment" />
+        <action
+            android:id="@+id/action_eventsFragment_to_my_Events_Fragment"
+            app:destination="@id/my_Events_Fragment" />
+        <action
+            android:id="@+id/action_eventsFragment_to_upcomingEventsFragment"
+            app:destination="@id/upcomingEventsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.app.socilon.fragments.location.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" />
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.app.socilon.fragments.user_profile_section.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" >
+        <action
+            android:id="@+id/action_userProfileFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.app.socilon.fragments.calendar.CalendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/eventsReviewFragment"
+        android:name="com.app.socilon.fragments.events.EventsReviewFragment"
+        android:label="fragment_events_review"
+        tools:layout="@layout/fragment_events_review" />
+    <fragment
+        android:id="@+id/past_Events_Fragment"
+        android:name="com.app.socilon.fragments.events.Past_Events_Fragment"
+        android:label="fragment_past__events_"
+        tools:layout="@layout/fragment_past__events_" >
+
+        <action
+            android:id="@+id/action_past_Events_Fragment_to_documentationFragment2"
+            app:destination="@id/documentationFragment" />
+        <action
+            android:id="@+id/action_past_Events_Fragment_to_eventsReviewFragment"
+            app:destination="@id/eventsReviewFragment" />
+        <action
+            android:id="@+id/action_past_Events_Fragment_to_photoFragment"
+            app:destination="@id/photoFragment" />
+        <action
+            android:id="@+id/action_past_Events_Fragment_to_videosFragment"
+            app:destination="@id/videosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/my_Events_Fragment"
+        android:name="com.app.socilon.fragments.events.My_Events_Fragment"
+        android:label="fragment_my__events_"
+        tools:layout="@layout/fragment_my__events_" >
+        <action
+            android:id="@+id/action_my_Events_Fragment_to_eventsReviewFragment"
+            app:destination="@id/eventsReviewFragment" />
+        <action
+            android:id="@+id/action_my_Events_Fragment_to_addDocumentsFragment"
+            app:destination="@id/addDocumentsFragment" />
+        <action
+            android:id="@+id/action_my_Events_Fragment_to_scanTicketFragment"
+            app:destination="@id/scanTicketFragment" />
+        <action
+            android:id="@+id/action_my_Events_Fragment_to_createNewEventFragment"
+            app:destination="@id/createNewEventFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/upcomingEventsFragment"
+        android:name="com.app.socilon.fragments.events.UpcomingEventsFragment"
+        android:label="fragment_upcoming_events"
+        tools:layout="@layout/fragment_upcoming_events" />
+    <fragment
+        android:id="@+id/addDocumentsFragment"
+        android:name="com.app.socilon.fragments.events.Add_Documentation_Section.AddDocumentsFragment"
+        android:label="fragment_add_documents"
+        tools:layout="@layout/fragment_add_documents" >
+        <action
+            android:id="@+id/action_addDocumentsFragment_to_addPhotosFragment"
+            app:destination="@id/addPhotosFragment" />
+        <action
+            android:id="@+id/action_addDocumentsFragment_to_addVideosFragment"
+            app:destination="@id/addVideosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.app.socilon.fragments.user_profile_section.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_securityFragment"
+            app:destination="@id/securityFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_appearanceFragment"
+            app:destination="@id/appearanceFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_helpFragment4"
+            app:destination="@id/helpFragment4" />
+        <action
+            android:id="@+id/action_settingFragment_to_helpFragment42"
+            app:destination="@id/helpFragment4" />
+        <action
+            android:id="@+id/action_settingFragment_to_inviteFriendsFragment"
+            app:destination="@id/inviteFriendsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.app.socilon.fragments.user_profile_section.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.app.socilon.fragments.user_profile_section.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/securityFragment"
+        android:name="com.app.socilon.fragments.user_profile_section.SecurityFragment"
+        android:label="fragment_security"
+        tools:layout="@layout/fragment_security" />
+    <fragment
+        android:id="@+id/appearanceFragment"
+        android:name="com.app.socilon.fragments.user_profile_section.AppearanceFragment"
+        android:label="fragment_appearance"
+        tools:layout="@layout/fragment_appearance" />
+    <fragment
+        android:id="@+id/helpFragment4"
+        android:name="com.app.socilon.fragments.user_profile_section.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" >
+        <action
+            android:id="@+id/action_helpFragment4_to_FAQFragment"
+            app:destination="@id/FAQFragment" />
+        <action
+            android:id="@+id/action_helpFragment4_to_contactUsFragment"
+            app:destination="@id/contactUsFragment" />
+        <action
+            android:id="@+id/action_helpFragment4_to_termsAndConditionsFragment"
+            app:destination="@id/termsAndConditionsFragment" />
+         <action
+            android:id="@+id/action_helpFragment4_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment" />
+        <action
+            android:id="@+id/action_helpFragment4_to_aboutUsFragment"
+            app:destination="@id/aboutUsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FAQFragment"
+        android:name="com.app.socilon.fragments.user_profile_section.FAQFragment"
+        android:label="fragment_f_a_q"
+        tools:layout="@layout/fragment_f_a_q" />
+    <fragment
+        android:id="@+id/contactUsFragment"
+        android:name="com.app.socilon.fragments.user_profile_section.ContactUsFragment"
+        android:label="fragment_contact_us"
+        tools:layout="@layout/fragment_contact_us" />
+    <fragment
+        android:id="@+id/termsAndConditionsFragment"
+        android:name="com.app.socilon.fragments.user_profile_section.TermsAndConditionsFragment"
+        android:label="fragment_terms_and_conditions"
+        tools:layout="@layout/fragment_terms_and_conditions" />
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.app.socilon.fragments.user_profile_section.PrivacyPolicyFragment"
+        android:label="fragment_privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.app.socilon.fragments.user_profile_section.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/inviteFriendsFragment"
+        android:name="com.app.socilon.fragments.user_profile_section.InviteFriendsFragment"
+        android:label="fragment_invite_friends"
+        tools:layout="@layout/fragment_invite_friends" />
+    <fragment
+        android:id="@+id/createLiveFragment2"
+        android:name="com.app.socilon.fragments.location.CreateLiveFragment"
+        android:label="fragment_create_live"
+        tools:layout="@layout/fragment_create_live" >
+        <action
+            android:id="@+id/action_createLiveFragment2_to_goLiveFragment"
+            app:destination="@id/goLiveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/goLiveFragment"
+        android:name="com.app.socilon.fragments.location.GoLiveFragment"
+        android:label="fragment_go_live"
+        tools:layout="@layout/fragment_go_live" >
+        <action
+            android:id="@+id/action_goLiveFragment_to_endLiveFragment"
+            app:destination="@id/endLiveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/endLiveFragment"
+        android:name="com.app.socilon.fragments.location.EndLiveFragment"
+        android:label="fragment_end_live"
+        tools:layout="@layout/fragment_end_live" />
+    <fragment
+        android:id="@+id/documentationFragment"
+        android:name="com.app.socilon.fragments.events.DocumentationFragment"
+        android:label="fragment_documentation"
+        tools:layout="@layout/fragment_documentation" >
+        <action
+            android:id="@+id/action_documentationFragment_to_videosFragment"
+            app:destination="@id/videosFragment" />
+        <action
+            android:id="@+id/action_documentationFragment_to_photoFragment"
+            app:destination="@id/photoFragment" />
+    </fragment>
+     <fragment
+        android:id="@+id/photoFragment"
+        android:name="com.app.socilon.fragments.events.PhotoFragment"
+        android:label="fragment_photo"
+        tools:layout="@layout/fragment_photo" />
+    <fragment
+        android:id="@+id/videosFragment"
+        android:name="com.app.socilon.fragments.events.VideosFragment"
+        android:label="fragment_videos"
+        tools:layout="@layout/fragment_videos" />
+    <fragment
+        android:id="@+id/addPhotosFragment"
+        android:name="com.app.socilon.fragments.events.Add_Documentation_Section.AddPhotosFragment"
+        android:label="fragment_add_photos"
+        tools:layout="@layout/fragment_add_photos" >
+        <action
+            android:id="@+id/action_addPhotosFragment_to_addVideosFragment"
+            app:destination="@id/addVideosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addVideosFragment"
+        android:name="com.app.socilon.fragments.events.Add_Documentation_Section.AddVideosFragment"
+        android:label="fragment_add_videos"
+        tools:layout="@layout/fragment_add_videos" >
+        <action
+            android:id="@+id/action_addVideosFragment_to_addPhotosFragment"
+            app:destination="@id/addPhotosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scanTicketFragment"
+        android:name="com.app.socilon.fragments.events.Add_Documentation_Section.ScanTicketFragment"
+        android:label="fragment_scan_ticket"
+        tools:layout="@layout/fragment_scan_ticket" />
+    <fragment
+        android:id="@+id/createNewEventFragment"
+        android:name="com.app.socilon.fragments.events.CreateNewEventFragment"
+        android:label="fragment_create_new_event"
+        tools:layout="@layout/fragment_create_new_event" />
+</navigation>

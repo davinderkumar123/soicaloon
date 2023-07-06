@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_back"
+            app:tint="@color/textColor" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Live Shopping"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+  <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="280dp"
+              android:background="@drawable/card_bg"
+              android:layout_marginHorizontal="10dp">
+
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:src="@drawable/girlsing"
+                  android:scaleType="fitXY"/>
+
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="17 Dec"
+                  android:textColor="@color/white"
+                  android:layout_alignParentEnd="true"
+                  android:layout_marginVertical="20dp"
+                  android:elevation="5dp"
+                  android:layout_marginHorizontal="25dp"/>
+
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:layout_marginHorizontal="20dp">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/black"
+                  android:text="Divya Singh"
+                  android:textStyle="bold"
+                  android:layout_centerVertical="true"
+                  android:textSize="16sp"/>
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_centerVertical="true"
+                 android:layout_alignParentEnd="true"
+                  android:weightSum="3">
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/user_watch"/>
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginHorizontal="10dp"
+                      android:src="@drawable/user_share"/>
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/tag"/>
+
+              </LinearLayout>
+
+          </RelativeLayout>
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginHorizontal="20dp"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/rectangle_color_bg">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="91.00 Tokens /Month"
+                  android:padding="10dp"
+                  android:layout_centerInParent="true"
+                  android:textSize="16sp"
+                  android:textColor="@color/black"/>
+
+          </RelativeLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginHorizontal="20dp"
+              android:orientation="horizontal"
+              android:layout_marginTop="15dp"
+              android:weightSum="2">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="Tips"
+                  android:textColor="@color/textColor"
+                  android:drawableStart="@drawable/dollar_bag"
+                  android:drawablePadding="10dp"
+                  android:gravity="center_vertical"
+                  android:layout_gravity="center_horizontal"/>
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="Message"
+                  android:textColor="@color/textColor"
+                  android:drawableStart="@drawable/messenger"
+                  android:drawablePadding="10dp"
+
+                  android:layout_gravity="center_horizontal"/>
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginHorizontal="20dp"
+              android:orientation="horizontal"
+              android:layout_marginTop="15dp"
+              android:weightSum="2">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="Video Call"
+                  android:textColor="@color/textColor"
+                  android:drawableStart="@drawable/video_call"
+                  android:drawablePadding="10dp"
+                  android:gravity="center_vertical"
+                  android:layout_gravity="center_horizontal"/>
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="Voice Call"
+                  android:textColor="@color/textColor"
+                  android:drawableStart="@drawable/phone_call"
+                  android:drawablePadding="10dp"
+
+                  android:layout_gravity="center_horizontal"/>
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginHorizontal="20dp"
+              android:orientation="horizontal"
+              android:layout_marginTop="15dp"
+              android:weightSum="2">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="Live Shopping"
+                  android:textColor="@color/textColor"
+                  android:drawableStart="@drawable/cart"
+                  android:drawablePadding="10dp"
+                  android:gravity="center_vertical"
+                  android:layout_gravity="center_horizontal"/>
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="Message"
+                  android:textColor="@color/textColor"
+                  android:drawableStart="@drawable/user_screen"
+                  android:drawablePadding="10dp"
+
+                  android:layout_gravity="center_horizontal"/>
+
+          </LinearLayout>
+
+          
+      </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="bottom"
+       android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_color_bg"
+            android:text="Golive"
+            android:textColor="@color/textColor"
+            android:layout_marginEnd="10dp"
+
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_color_bg"
+            android:text="Golive"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/textColor"
+            android:layout_weight="1"/>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

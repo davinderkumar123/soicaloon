@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:id="@+id/recieverLay"
+    android:layout_width="200dp"
+    android:layout_height="50dp"
+    android:layout_margin="5dp"
+    android:layout_alignParentStart="true"
+    android:elevation="5dp"
+    android:background="@drawable/reciver_chat_des">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:text="Who else is going with us"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+
+        android:layout_alignParentBottom="true"
+        android:text="25-July 10:00 pm"/>
+
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/recieverLay"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/sender_chat_des"
+        android:elevation="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Daniel and Hank"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp"
+            android:text="25-July 10:00 pm"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

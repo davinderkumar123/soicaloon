@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:background="@drawable/rectangle_color_bg"
+    android:layout_height="195dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_above="@id/next1"
+        android:background="@drawable/rectangle_color_bg">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/drink"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rectangle_design"
+                    android:padding="5dp"
+                    android:text=" 17 Dec"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/bastu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastau Concert"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginVertical="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14sp"/>
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/tag"/>
+                <TextView
+                    android:id="@+id/tv_concert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Music"
+                    android:background="@drawable/capsule"
+                    android:textColor="@color/textColor"
+                    android:layout_below="@id/bastu"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="3dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="14sp"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/usersLive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_below="@id/tv_concert">
+                    <RelativeLayout
+                        android:id="@+id/manrll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:elevation="5dp"
+                        android:layout_marginStart="8dp">
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/card1"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            app:cardCornerRadius="500dp"
+                            app:strokeWidth="1dp"
+                            app:strokeColor="@color/textColor">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/man"/>
+                        </com.google.android.material.card.MaterialCardView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/man2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        android:layout_toRightOf="@id/manrll"
+                        android:layout_marginStart="-15dp">
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/card2"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            app:cardCornerRadius="500dp"
+                            app:strokeWidth="1dp"
+                            app:strokeColor="@color/textColor">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/man"/>
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/man3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/man2"
+                        android:layout_marginStart="-15dp">
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            app:cardCornerRadius="500dp"
+                            app:strokeWidth="1dp"
+                            app:strokeColor="@color/textColor">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/man"/>
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20K+ Going"
+                        android:textColor="@color/grey"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toRightOf="@id/man3"
+                        android:textSize="12sp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="6dp"
+                    android:layout_below="@id/usersLive">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Grand Avenue,Indonesia"
+                        android:drawableStart="@drawable/locations"
+                        android:drawablePadding="10dp"
+                        android:textSize="10dp"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"/>
+
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/next1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:weightSum="2"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addNewDocs"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Add Documentation"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:textSize="11sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/button_bg_login"
+            android:backgroundTint="@color/textColor"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/seeReviews"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="See Reviews"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:textSize="11sp"
+            android:textColor="@color/textColor"
+            android:background="@drawable/rectangle_color_bg"
+            />
+        <ImageView
+            android:id="@+id/scan_docs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/scan_img"
+            android:layout_marginHorizontal="8dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

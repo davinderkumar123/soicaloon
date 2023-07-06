@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.loginSection.OtpFragment"
+    tools:ignore="MissingClass">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<ImageView
+    android:id="@+id/backToScreen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/arrow_back"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="10dp"/>
+
+
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome back"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="40dp"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="we sent a 4-digit code to +919814133015"
+                android:textColor="@color/black"
+                android:layout_marginStart="40dp"
+                android:textSize="16sp"/>
+
+    <in.aabhasjindal.otptextview.OtpTextView
+        android:id="@+id/otp_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        app:bar_error_color="@color/black"
+        app:box_margin_left="10dp"
+        app:box_margin_right="10dp"
+        app:height="50dp"
+        app:length="4"
+        app:otp_box_background="@drawable/otp_bg"
+        app:otp_text_size="22dp"
+        app:width="50dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:text="Next"
+        android:layout_marginHorizontal="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg_login"
+        android:backgroundTint="@color/textColor"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Didn’t receive the code?"/>
+
+        <TextView
+            android:id="@+id/signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+
+            android:text="Resend"/>
+
+
+
+    </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

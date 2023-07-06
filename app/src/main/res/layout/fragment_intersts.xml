@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.loginSection.InterstsFragment">
+
+    <TextView
+        android:id="@+id/goToBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginVertical="10dp"
+        android:drawableStart="@drawable/arrow_back"
+        android:drawablePadding="10dp"
+        android:text="Select Your interest"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemRecyclar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/goToBack"
+        android:padding="10dp"
+        android:layout_above="@id/goToNextPage"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/interest_item_list" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/goToNextPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+      android:layout_marginVertical="10dp"
+        android:text="Next"
+        android:layout_marginHorizontal="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg_login"
+        android:backgroundTint="@color/textColor"/>
+
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.events.Add_Documentation_Section.AddPhotosFragment">
+
+    <RelativeLayout
+        android:id="@+id/mainRLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="24dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/arrow_back"
+            app:tint="@color/textColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_toRightOf="@id/backbtn"
+            android:text="Add Documentation"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/mainLLAay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainRLay"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/capsule"
+            android:backgroundTint="@color/textColor"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Photos"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/goToVideos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/capsule"
+
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Videos"
+            android:textColor="@color/textColor" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/photosRecyclar"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/mainLLAay"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3"
+        tools:listitem="@layout/photos_list" />
+
+    <RelativeLayout
+        android:id="@+id/photosLay"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@id/bottomLay"
+        android:layout_below="@id/photosRecyclar"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/dots_drawable"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/photoSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/plus"
+            android:drawablePadding="5dp"
+            android:text="Add More Photos"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20sp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/updatePhotoBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/button_bg_login"
+            android:backgroundTint="@color/textColor"
+            android:text="Update &amp; Publish"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

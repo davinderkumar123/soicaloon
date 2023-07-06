@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.calendar.CalendarFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EventList"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/event_logo"/>
+  <CalendarView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+/>
+<!--    android:theme="@style/CalenderViewCustom"-->
+<!--    android:dateTextAppearance="@style/CalenderViewDateCustomText"-->
+<!--    android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/calendarList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/calendar_list"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+
+
+</LinearLayout>

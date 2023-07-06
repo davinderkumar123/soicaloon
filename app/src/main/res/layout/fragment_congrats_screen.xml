@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.forgotSection.CongratsScreenFragment">
+    <ImageView
+        android:id="@+id/backarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:src="@drawable/arrow_back" />
+    <RelativeLayout
+        android:id="@+id/rrl1"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@id/backarrow"
+
+        android:background="@drawable/congrats_bg"
+        android:layout_marginTop="20sp">
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/congrats_logo"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cong"
+        android:layout_width="wrap_content"
+        android:text="Congrats!"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:layout_below="@id/rrl1"
+android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Your Account is ready to use"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/cong"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+       android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/verify"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+      android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rectangle_design"
+        android:text="Go to Homepage"
+        android:backgroundTint="@color/textColor"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
